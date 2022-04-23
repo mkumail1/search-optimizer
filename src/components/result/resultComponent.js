@@ -3,7 +3,9 @@ import './card.style.css';
 import { ResultCard } from '.';
 import LoadingScreen from '../common/loadingScreen';
 
-export default function ResultComponent({ results, name }) {
+export default function ResultComponent({ results }) {
+  const name = window.localStorage.getItem('name');
+
   if (results?.isLoading) return <LoadingScreen />;
 
   return (

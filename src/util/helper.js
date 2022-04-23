@@ -15,6 +15,8 @@ export const requestSearch = _.memoize(async (name) => {
 
   const result = await res.json();
 
+  console.log('onSubmit Called', result);
+
   return result === '' ? { error: 'Not Found' } : result;
 });
 
@@ -28,6 +30,8 @@ export const requestEvents = _.memoize(async (name) => {
   }
 
   const result = await res.json();
+
+  console.log('Events Called', result);
 
   return result === '' ? { error: 'Not Found' } : result;
 });

@@ -35,4 +35,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Hosting
 
-This website is hosted using GitHub pages
+This website is hosted using GitHub pages, you can directly visit this [deployment link](https://mkumail1.github.io/search-optimizer/) to open the deployed version of the app.
