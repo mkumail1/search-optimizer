@@ -21,7 +21,8 @@ You may also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+This application has only 1 unit test that is aplied on home screen which checks if the applciation goes to loading state on calling the api before its resolved.
 
 ### `yarn build`
 
