@@ -7,10 +7,10 @@ import LoadingScreen from '../common/loadingScreen';
 import './events.style.css';
 
 export default function EventComponent() {
-  const { artistName } = useParams();
-  const [events, setEvents] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [results, setResults] = useState(null);
+  const { artistName } = useParams(); //artist name is fetch from parms of the browser
+  const [events, setEvents] = useState(null); //this stores all the events fetched from the api
+  const [isLoading, setIsLoading] = useState(true); //this keeps track of loading state
+  const [results, setResults] = useState(null); //this stores the default information of the artist
 
   const onSubmit = useCallback(async () => {
     if (!results) {
@@ -25,10 +25,11 @@ export default function EventComponent() {
 
   useEffect(() => {
     if (artistName) {
-      onSubmit();
       setIsLoading(true);
+      onSubmit();
     }
 
+    //updates the cache state of name on browser refresh
     window.localStorage.setItem('name', artistName);
   }, [artistName]);
 

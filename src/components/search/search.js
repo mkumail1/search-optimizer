@@ -3,14 +3,15 @@ import './search.style.css';
 import searchIcon from '../../assets/icons/search.png';
 
 export default function Search({ onSubmit, cleanUp }) {
-  const [name, setName] = useState(window.localStorage.getItem('name') || '');
-  const [delayedSearchName, setDelayedSearchName] = useState(name);
+  const [name, setName] = useState(window.localStorage.getItem('name') || ''); //this stores the artist's name
+  const [delayedSearchName, setDelayedSearchName] = useState(name); //this keeps track of update name state based on key strokes
 
   const onSearch = (e) => {
     setDelayedSearchName(e.target.value);
   };
 
   useEffect(() => {
+    //name state only updates after a key press delay of 300 ms
     const timer = setTimeout(() => {
       setName(delayedSearchName);
       window.localStorage.setItem('name', delayedSearchName);

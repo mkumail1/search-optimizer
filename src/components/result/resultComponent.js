@@ -6,6 +6,7 @@ import LoadingScreen from '../common/loadingScreen';
 export default function ResultComponent({ results }) {
   const name = window.localStorage.getItem('name');
 
+  //shows loading screen if the api call is not resolved yet
   if (results?.isLoading) return <LoadingScreen />;
 
   return (
