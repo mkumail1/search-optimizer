@@ -44,7 +44,7 @@ Having CI/CD integration helps the project to auto deploy based on each push req
 This application is built using React which provides SPA feature to search details of an artist. the application has following features:
 
 - The application can fetch result based on artist's name
-- The user get's a seemless experience of search results based on the searched item
+- The user gets a seemless experience of search results based on the searched item
 - The screen loads when the API result is being fetch
 - The screen shows the card result when the API is completely resolved
 - The user can click on the card to see the upcoming events of the artist
