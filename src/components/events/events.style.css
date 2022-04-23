@@ -1,0 +1,85 @@
+.back-page a {
+  text-decoration: none;
+  color: #484848;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.margin-5 {
+  margin-left: 5px;
+}
+
+.upcoming-events-container {
+  margin-top: 60px;
+}
+
+.upcoming-events-container h2 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 15px 20px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+  width: 250px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.event-card h5 {
+  border-bottom: 1px solid #888888;
+  padding: 8px 0;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 18px;
+  color: #484848;
+}
+
+.event-card h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #525252;
+}
+
+.event-card p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #888888;
+}
+
+.event-card-detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-card-bar {
+  margin-right: 70px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .result-card-provider {
+    padding-right: 30px;
+    width: 100%;
+  }
+
+  .event-card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
