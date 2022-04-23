@@ -6,12 +6,10 @@ import Search from './search';
 
 export default function SearchComponent() {
   const [results, setResults] = useState(null);
-
   const onSubmit = useCallback(async (name) => {
     const result = await requestSearch(name.toLowerCase());
     setResults({ ...result, isLoading: false });
   }, []);
-
   const cleanUp = () => setResults(null);
 
   return (

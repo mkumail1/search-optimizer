@@ -20,9 +20,8 @@ export default function Search({ onSubmit, cleanUp }) {
   }, [delayedSearchName]);
 
   useEffect(() => {
-    if (name !== '') {
-      onSubmit(name);
-    } else cleanUp();
+    if (name !== '') onSubmit(name);
+    else cleanUp();
   }, [name]);
 
   return (
