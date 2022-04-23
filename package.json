@@ -1,11 +1,13 @@
 {
   "name": "code",
   "version": "0.1.0",
+  "homepage": "https://mkumail1.github.io/search-optimizer/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-content-loader": "^6.2.0",
@@ -18,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
