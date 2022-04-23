@@ -35,4 +35,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Hosting
 
-This website is hosted using GitHub pages, you can directly visit this [deployment link](https://mkumail1.github.io/search-optimizer/) to open the deployed version of the app.
+This website is hosted using Vercel's React CI/CD, you can directly visit this [deployment link](https://search-optimizer.vercel.app/) to open the deployed version of the app.
+Having CI/CD integration helps the project to auto deploy based on each push request to GitHub.
+
+### Architecture
+
+This application is built using React which provides SPA feature to search details of an artist. the application has following features:
+
+- The application can fetch result based on artist's name
+- The user get's a seemless experience of search results based on the searched item
+- The screen loads when the API result is being fetch
+- The screen shows the card result when the API is completely resolved
+- The user can click on the card to see the upcoming events of the artist
+- The name of artist is cached to local storage of the browser therefore it persists the `name` state even on browser is refreshed
+- The API calls are saved on each key pressed. As the API is only called once the user stops pressing the keys for 300 ms
+- The application uses lodash to memoize search results and avoid API calls of same name
