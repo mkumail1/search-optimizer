@@ -1,5 +1,5 @@
 import SearchComponent from '../searchComponent';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 test('it check if the component is in loading state after the input is called', async () => {
   render(<SearchComponent />);
